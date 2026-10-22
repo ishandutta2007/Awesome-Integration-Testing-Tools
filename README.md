@@ -30,72 +30,29 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global software testing and quality engineering market is estimated at approximately **$50–$60 billion** (2025–2026), expanding at a CAGR of roughly 8–13%. The sector is **moderately fragmented**: while enterprise leaders (such as Tricentis, SmartBear, and BrowserStack) capture large commercial footprints, no single vendor commands a winner-take-all monopoly, leaving substantial market share distributed across open-source ecosystems, specialized cloud device clouds, and AI-driven testing startups.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Testcontainers Cloud](https://testcontainers.com/cloud/)**  
-
-  Cloud runtime for Testcontainers that removes the need for a local Docker daemon. Containers run on x86 architecture in the cloud, which is particularly useful for ARM MacBooks and Windows machines that struggle with x86 container performance . **Pricing**: per-seat licenses are waived for Docker Pro, Team, and Business subscribers; included runtime minutes are 100 (Pro), 500 (Team), and 1,500 (Business) per month, with consumption-based pricing for additional minutes . Best for teams using Testcontainers who want to offload container execution from local machines and CI workers.
-
-
-
-- **[Docker Desktop](https://www.docker.com/products/docker-desktop/)**  
-
-  The desktop container runtime that most developers use to run Testcontainers locally. **Licensing**: free for small businesses (<250 employees AND <$10M revenue), personal use, education, and non-commercial open source; paid subscription required for larger organizations and government entities . Included with Docker Pro/Team/Business subscriptions . Best for developers who need a local Docker environment for Testcontainers and general container development.
-
-
-
-- **[Testsigma](https://testsigma.com/)**  
-
-  AI-powered test automation platform covering web, mobile, and API testing. Low-code interface with self-healing capabilities. Best for teams that want a managed test automation platform without maintaining their own infrastructure.
-
-
-
-- **[BrowserStack](https://www.browserstack.com/)**  
-
-  Cloud device and browser testing platform. While primarily known for cross-browser E2E testing, it provides real environments for integration validation across browsers and devices. Best for teams that need to validate integrations against real browser/device combinations.
-
-
-
-- **[Sauce Labs](https://saucelabs.com/)**  
-
-  Enterprise continuous testing cloud with real-device and virtual browser coverage. Best for organizations needing enterprise governance and compliance in their test infrastructure.
-
-
-
-- **[Postman](https://www.postman.com/)**  
-
-  API platform with collection-based testing, mock servers, and monitoring. While not a container orchestration tool, Postman's mock servers and collection runner support API integration testing workflows. Best for teams validating API contracts and integrations.
-
-
-
-- **[ReadyAPI (SmartBear)](https://smartbear.com/product/ready-api/)**  
-
-  Commercial API testing platform with service virtualization, load testing, and security scanning. Best for enterprises needing comprehensive API integration validation with virtualized dependencies.
-
-
-
-- **[Katalon Studio](https://katalon.com/)**  
-
-  Low-code test automation platform supporting web, API, mobile, and desktop. Free tier available; paid plans add advanced features. Best for teams wanting an all-in-one test automation tool with a gentler learning curve.
-
-
-
-- **[Tricentis](https://www.tricentis.com/)**  
-
-  Enterprise test automation platform (including Tosca and NeoLoad). Model-based testing approach for complex enterprise applications. Enterprise-priced. Best for large organizations with complex, multi-system integration testing needs.
-
+| Product | Company Size (Valuation / Revenue) | Pricing | Free Tier / Free Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Postman](https://www.postman.com/)** | $5.6B valuation (~$170M–$300M ARR) | Starts at $9/user/month (Solo, annual) or $19/user/month (Team, annual) | Free plan: 1 user, unlimited collection runs & mock servers, 1,000 API monitoring calls/month, 50 AI credits/month | API platform featuring collection-based automated testing, mock servers, and contract testing workflows. |
+| **[Tricentis](https://www.tricentis.com/)** | $4.5B valuation (~$500M ARR) | Starts around $3,000/user/year (or core platform from €20,000/year) | 14-day free trial (full evaluation access to Tosca / qTest cloud features, no credit card required) | Enterprise-grade continuous testing and model-based test automation platform for complex integrated workflows. |
+| **[BrowserStack](https://www.browserstack.com/)** | $4.0B valuation (~$225M ARR) | Starts at $29/user/month (Live Desktop, annual) or $99/parallel/month (Automate Desktop) | Free trial: 30 minutes Live testing (desktop/mobile, ~1 min/device limit), 60 minutes Automate, 100 screenshots; Percy visual tier free for 5,000 screenshots/month | Cloud device and browser testing cloud providing real device execution for web and mobile integration validation. |
+| **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** | $2.1B valuation (~$207M ARR) | Starts at $9/user/month (Pro, annual) or $15/user/month (Team, annual) | Free-forever Personal plan: Limited to personal use, education, and businesses with <250 employees AND <$10M revenue | Local container engine that developers and CI workflows use to run Testcontainers and containerized dependencies. |
+| **[ReadyAPI (SmartBear)](https://smartbear.com/product/ready-api/)** | Private (~$500M ARR) | Starts at $1,000/license/year (individual module) or $4,700+/license/year (full bundle) | 14-day free trial (complete unrestricted access to all ReadyAPI functional, load, and virtualization modules) | API integration and testing suite providing service virtualization, security validation, and performance testing. |
+| **[Sauce Labs](https://saucelabs.com/)** | Private (~$70M–$90M ARR) | Starts at $39/month (Live Testing, annual) or $149/month (Virtual Cloud, annual) | 28-day free trial: 60 automated/live testing minutes with 3 concurrent virtual machines | Enterprise cloud continuous testing platform offering real device grids, emulators, and virtual browser environments. |
+| **[Katalon Studio](https://katalon.com/)** | Private (~$36M–$60M ARR) | Starts at $229/month (or $1,000/seat/year for Studio Enterprise); Cloud platform from $59/month | Free-forever plan: Local test creation & manual execution only; excludes CI/CD execution (no KRE) & capped at 2,000 TestOps uploads/month | Low-code test automation platform covering web, mobile, API, and desktop applications. |
+| **[Testcontainers Cloud](https://testcontainers.com/cloud/)** | Division of Docker ($2.1B valuation) | Bundled in Docker Pro ($9/user/month, annual) or Team ($15/user/month, annual) | Docker Personal trial: evaluation access only; paid plans include 100 mins/mo (Pro) or 500 mins/mo (Team) before per-minute overages | Managed cloud container runtime for Testcontainers removing local daemon constraints and accelerating CI pipeline jobs. |
+| **[Testsigma](https://testsigma.com/)** | Early-stage ($25M–$50M valuation / ~$8M–$10M ARR) | Test Management starts at $14/user/month; Automation Cloud plans start via custom quotes | 21-day free trial of Automation Cloud (full access); self-hosted Community Edition is free (requires managing own infrastructure/device grid) | Cloud-based low-code and AI-driven automation platform supporting web, mobile app, and API integration tests. |
 
 
 ## Open-Source GitHub Projects
